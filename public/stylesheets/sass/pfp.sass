@@ -1,2 +1,84 @@
 body
-  background: gray
+  background: #FFFFFF
+  font: normal normal 12px Arial
+
+  #banner
+    text-align: right
+
+  #main
+    margin: 5px
+    padding: 5px
+    #sidebar
+      float: left
+      width: 20%
+      position: fixed
+      border: 1px solid gray
+      .navigation_links
+        .nav_link
+          margin: 2px
+          border-bottom: 1px dotted gray
+          &:hover
+            background: #C9A6B8
+        .active
+          background: red
+    #page
+      float: right
+      width: 75%
+      border: 1px solid gray
+
+      #home
+      #admin
+        .tabs
+          display: block
+          margin: 5px
+          a
+            background: #CCFFFF
+            padding: 5px
+            text_decoration: none
+            &:hover
+              background: #87BAFF
+        .upload_db_form
+          display: block
+          padding: 5px
+          margin-left: 20px
+          width: 50%
+          background: #e6e6e6
+          .notice
+            padding: 5px
+          .fieldset
+            padding: 5px
+            .label
+              float: left
+              width: 30%
+              padding: 5px
+            .input_box
+              padding: 5px
+            .submit_tag
+              align: center
+        .upload_stopwords_form
+          display: block
+          padding: 5px
+          margin-left: 20px
+          width: 50%
+          background: #e6e6e6
+          .notice
+            padding: 5px
+          .fieldset
+            padding: 5px
+            .label
+              float: left
+              width: 30%
+              padding: 5px
+            .input_box
+              padding: 5px
+            .submit_tag
+              align: center
+
+  #footer
+    margin: 5px
+    display: block
+    background: #ffffff
+    text-align: center
+    width: 100%
+    overflow: hidden
+

@@ -1,0 +1,33 @@
+.upload_db_form
+  .notice
+    Please fill up the following information.
+
+  .fieldset
+    .label
+      = label_tag :release_number, "Release Number :"
+    .input_box
+      = text_field_tag :release_number
+      e.g &lt;15.13&gt;
+
+  .fieldset
+    .label
+      = label_tag :release_date, "Release Date :"
+    .input_box
+      = text_field_tag :release_date
+      e.g &lt;yyyy-mm-dd&gt;
+
+  .fieldset
+    .label
+      = label_tag :update_label, "File :"
+    .input_box
+      = file_field_tag :db
+
+  .fieldset
+    .label
+      = label_tag :notes, "Notes / Comments :"
+    .input_box
+      = text_area_tag :notes
+
+  .fieldset
+    .submit_tag
+      = submit_tag "Upload Update >>", :id => 'upload_db_button'

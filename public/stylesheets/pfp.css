@@ -1,2 +1,76 @@
 body {
-  background: gray; }
+  background: white;
+  font: normal normal 12px Arial; }
+  body #banner {
+    text-align: right; }
+  body #main {
+    margin: 5px;
+    padding: 5px; }
+    body #main #sidebar {
+      float: left;
+      width: 20%;
+      position: fixed;
+      border: 1px solid gray; }
+      body #main #sidebar .navigation_links .nav_link {
+        margin: 2px;
+        border-bottom: 1px dotted gray; }
+        body #main #sidebar .navigation_links .nav_link:hover {
+          background: #c9a6b8; }
+      body #main #sidebar .navigation_links .active {
+        background: red; }
+    body #main #page {
+      float: right;
+      width: 75%;
+      border: 1px solid gray; }
+      body #main #page #admin .tabs {
+        display: block;
+        margin: 5px; }
+        body #main #page #admin .tabs a {
+          background: #ccffff;
+          padding: 5px;
+          text_decoration: none; }
+          body #main #page #admin .tabs a:hover {
+            background: #87baff; }
+      body #main #page #admin .upload_db_form {
+        display: block;
+        padding: 5px;
+        margin-left: 20px;
+        width: 50%;
+        background: #e6e6e6; }
+        body #main #page #admin .upload_db_form .notice {
+          padding: 5px; }
+        body #main #page #admin .upload_db_form .fieldset {
+          padding: 5px; }
+          body #main #page #admin .upload_db_form .fieldset .label {
+            float: left;
+            width: 30%;
+            padding: 5px; }
+          body #main #page #admin .upload_db_form .fieldset .input_box {
+            padding: 5px; }
+          body #main #page #admin .upload_db_form .fieldset .submit_tag {
+            align: center; }
+      body #main #page #admin .upload_stopwords_form {
+        display: block;
+        padding: 5px;
+        margin-left: 20px;
+        width: 50%;
+        background: #e6e6e6; }
+        body #main #page #admin .upload_stopwords_form .notice {
+          padding: 5px; }
+        body #main #page #admin .upload_stopwords_form .fieldset {
+          padding: 5px; }
+          body #main #page #admin .upload_stopwords_form .fieldset .label {
+            float: left;
+            width: 30%;
+            padding: 5px; }
+          body #main #page #admin .upload_stopwords_form .fieldset .input_box {
+            padding: 5px; }
+          body #main #page #admin .upload_stopwords_form .fieldset .submit_tag {
+            align: center; }
+  body #footer {
+    margin: 5px;
+    display: block;
+    background: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden; }
