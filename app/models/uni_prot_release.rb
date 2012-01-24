@@ -17,3 +17,15 @@ class UniProtRelease < ActiveRecord::Base
     @uni_prot_release = uni_prot_release
   end
 end
+
+=begin
+definition   :     UniProtRelease model is used when updating protein related database. Database updates will be downloaded from www.uniprot.org.
+attributes    :     release number = UniProt release number as reported in the website
+                        release date = Uniprot release date as reported in the website
+                        db = file downloaded from the website, in tab or text form
+                        notes = any additional notes as necessary
+when downloading new database release :
+query :
+
+file format : *.tab, *.txt
+=end

@@ -1,3 +1,4 @@
+/*MIXINS */
 body {
   background: white;
   font: normal normal 12px Arial; }
@@ -12,8 +13,10 @@ body {
       position: fixed;
       border: 1px solid gray; }
       body #main #sidebar .navigation_links .nav_link {
+        border-radius: 1em;
+        -moz-border-radius: em;
         margin: 2px;
-        border-bottom: 1px dotted gray; }
+        padding: 5px; }
         body #main #sidebar .navigation_links .nav_link:hover {
           background: #c9a6b8; }
       body #main #sidebar .navigation_links .active {

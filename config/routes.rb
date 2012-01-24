@@ -50,6 +50,14 @@ PFP::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => "dashboard#index"
 
+  resources :uni_prot_release  do
+    member do
+    end
+
+    collection do
+    end
+  end
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

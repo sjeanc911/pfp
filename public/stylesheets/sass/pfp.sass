@@ -1,3 +1,8 @@
+/** MIXINS
+@mixin rounded-corners
+  border-radius: 1em
+  -moz-border-radius: em
+
 body
   background: #FFFFFF
   font: normal normal 12px Arial
@@ -15,8 +20,9 @@ body
       border: 1px solid gray
       .navigation_links
         .nav_link
+          @include rounded-corners
           margin: 2px
-          border-bottom: 1px dotted gray
+          padding: 5px
           &:hover
             background: #C9A6B8
         .active
