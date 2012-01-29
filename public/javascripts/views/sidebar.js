@@ -6,7 +6,6 @@ App.Views.SidebarView = Backbone.View.extend({
   },
 
   initialize : function(e) {
-    console.log('init sidebar');
     html = _.template($j('#sidebar_tmp').html(), {});
     $j(this.el).html(html);
     $j(this.el).find('#home_page').addClass('active');
@@ -30,7 +29,6 @@ App.Views.SidebarView = Backbone.View.extend({
 
   prepareTargetDiv: function(targetId)
   {
-    console.log('prepare target div');
     $j('#content').children().html('');
   }
 

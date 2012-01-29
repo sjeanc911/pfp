@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111227082948) do
+ActiveRecord::Schema.define(:version => 20120204083618) do
+
+  create_table "abstract_files", :force => true do |t|
+    t.string   "content"
+    t.string   "abstract_file_name"
+    t.string   "abstract_content_type"
+    t.integer  "abstract_file_size"
+    t.date     "abstract_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "protein_data", :force => true do |t|
     t.datetime "created_at"
@@ -23,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20111227082948) do
     t.integer  "db_file_size"
     t.string   "release_number"
     t.date     "release_date"
+    t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

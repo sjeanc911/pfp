@@ -70,6 +70,15 @@ body {
             padding: 5px; }
           body #main #page #admin .upload_stopwords_form .fieldset .submit_tag {
             align: center; }
+      body #main #page #predict .tabs {
+        display: block;
+        margin: 5px; }
+        body #main #page #predict .tabs a {
+          background: #ccffff;
+          padding: 5px;
+          text_decoration: none; }
+          body #main #page #predict .tabs a:hover {
+            background: #87baff; }
   body #footer {
     margin: 5px;
     display: block;

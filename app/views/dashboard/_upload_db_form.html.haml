@@ -2,32 +2,35 @@
   .notice
     Please fill up the following information.
 
-  .fieldset
-    .label
-      = label_tag :release_number, "Release Number :"
-    .input_box
-      = text_field_tag :release_number
-      e.g &lt;15.13&gt;
+  = form_tag(uni_prot_releases_path, {:multipart => true, :method => "post", :target => "temp_frame"}) do
+    .fieldset
+      .label
+        = label_tag :release_number, "Release Number :"
+      .input_box
+        = text_field_tag "uni_prot_release[release_number]"
+        e.g &lt;15.13&gt;
 
-  .fieldset
-    .label
-      = label_tag :release_date_label, "Release Date :"
-    .input_box
-      = text_field_tag :release_date
-      e.g &lt;mm-dd-yyyy&gt;
+    .fieldset
+      .label
+        = label_tag :release_date_label, "Release Date :"
+      .input_box
+        = text_field_tag "uni_prot_release[release_date]"
+        e.g &lt;mm-dd-yyyy&gt;
 
-  .fieldset
-    .label
-      = label_tag :update_label, "File :"
-    .input_box
-      = file_field_tag :db
+    .fieldset
+      .label
+        = label_tag :update_label, "File :"
+      .input_box
+        = file_field_tag "uni_prot_release[db]"
 
-  .fieldset
-    .label
-      = label_tag :notes, "Notes / Comments :"
-    .input_box
-      = text_area_tag :notes
+    .fieldset
+      .label
+        = label_tag :notes, "Notes / Comments :"
+      .input_box
+        = text_area_tag "uni_prot_release[notes]"
 
-  .fieldset
-    .submit_tag
-      = submit_tag "Upload Update >>", :id => 'upload_db_button'
+    .fieldset
+      .submit
+        = submit_tag "Upload Update >>"
+
+  %iframe{:id => "temp_frame", :name => "temp_frame", :style => "display:none;"}

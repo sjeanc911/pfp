@@ -1,0 +1,11 @@
+.upload_abstract_form
+
+  = form_tag(abstract_files_path, {:multipart => true, :method => "post",
+:target => "temp_frame"}) do
+
+    = label_tag :upload_label, "Abstract : "
+    = file_field_tag "abstract_file[abstract]"
+
+    = submit_tag "Upload abstract >>"
+
+  %iframe{:id => "temp_frame", :name => "temp_frame", :style => "display: none;"}

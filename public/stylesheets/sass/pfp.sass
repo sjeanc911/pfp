@@ -2,6 +2,15 @@
 @mixin rounded-corners
   border-radius: 1em
   -moz-border-radius: em
+@mixin tabs
+  display: block
+  margin: 5px
+  a
+    background: #CCFFFF
+    padding: 5px
+    text_decoration: none
+    &:hover
+      background: #87BAFF
 
 body
   background: #FFFFFF
@@ -35,14 +44,7 @@ body
       #home
       #admin
         .tabs
-          display: block
-          margin: 5px
-          a
-            background: #CCFFFF
-            padding: 5px
-            text_decoration: none
-            &:hover
-              background: #87BAFF
+          @include tabs
         .upload_db_form
           display: block
           padding: 5px
@@ -79,6 +81,10 @@ body
               padding: 5px
             .submit_tag
               align: center
+
+      #predict
+        .tabs
+          @include tabs
 
   #footer
     margin: 5px

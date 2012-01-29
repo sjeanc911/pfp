@@ -50,7 +50,15 @@ PFP::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => "dashboard#index"
 
-  resources :uni_prot_release  do
+  resources :uni_prot_releases  do
+    member do
+    end
+
+    collection do
+    end
+  end
+
+  resources :abstract_files  do
     member do
     end
 

@@ -4,9 +4,10 @@ class CreateUniProtReleases < ActiveRecord::Migration
       t.string   :db_file_name
       t.string   :db_content_type
       t.integer :db_file_size
+      t.date     :db_updated_at
       t.string   :release_number
       t.date     :release_date
-
+      t.string  :notes
       t.timestamps
     end
   end

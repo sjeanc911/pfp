@@ -2,7 +2,7 @@ module ApplicationHelper
 
    def base_url
 <<JAVASCRIPT
-          window._uni_prot_release_path = "#{uni_prot_release_index_path}";
+          window._uni_prot_releases_path = "#{uni_prot_releases_path}";
 JAVASCRIPT
    end
 

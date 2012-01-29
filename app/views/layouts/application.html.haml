@@ -7,8 +7,10 @@
     = javascript_tag (base_url)
 
     %title PFP
-    = stylesheet_link_tag 'pfp', 'jquery/smoothness/jquery-ui-1.8.17.custom'
-    = javascript_include_tag 'jquery-1.7.1.min', 'jquery-ui-1.8.17.custom.min', 'jquery_no_conflict'
+    = stylesheet_link_tag 'pfp',
+    'jquery/smoothness/jquery-ui-1.8.17.custom'
+    = javascript_include_tag 'jquery-1.7.1.min',
+    'jquery-ui-1.8.17.custom.min', 'jquery_no_conflict'
     = javascript_include_tag  'prototype', 'underscore', 'backbone'
     = javascript_include_tag 'application'
     = render :partial => '/layouts/backbone_objects'
