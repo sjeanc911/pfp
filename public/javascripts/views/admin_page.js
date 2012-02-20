@@ -4,7 +4,9 @@ App.Views.AdminPageView = Backbone.View.extend({
     'showAdminPage'                           : 'showAdminPage',
     'click a#upload_db_link'                    : 'showUploadDbForm',
     'hideUploadForm'                             : 'hideUploadForm',
-    'click a#upload_stopwords_link'        : 'showUploadStopwordsForm',
+    'click a#add_stopwords_link'        : 'addStopwords',
+    'change #add_stopwords_upload'   : 'uploadStopwords',
+    'change #add_stopwords_enter'      : 'enterStopwords',
     'uploadDone'                                      : 'uploadDone'
   },
 
@@ -29,9 +31,19 @@ App.Views.AdminPageView = Backbone.View.extend({
     $j('#form_container').html('');
   },
 
-  showUploadStopwordsForm: function(e) {
-    form = _.template($j('#upload_stopwords_tmp').html(), {});
+  addStopwords: function(e) {
+    form = _.template($j('#add_stopwords_tmp').html(), {});
     $j('#form_container').html(form);
+  },
+
+  uploadStopwords : function(e) {
+    uploadHtml = _.template($j("#upload_stopwords_tmp").html(), {});
+    $j(".add_stopwords .fieldset").replaceWith(uploadHtml);
+  },
+
+  enterStopwords: function(e) {
+    enterHtml = _.template($j("#enter_stopwords_tmp").html(), {});
+    $j(".add_stopwords .fieldset").replaceWith(enterHtml);
   },
 
   uploadDone: function(e) {

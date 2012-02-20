@@ -1,15 +1,5 @@
-.upload_stopwords_form
-  .notice
-    Please select update options.
-
-  .fieldset
-    .label
-      = label_tag :enter, 'Enter input :'
-    .input_box
-      = text_area_tag :input, :enter
-
-  .fieldset
-    .label
-      = label_tag :upload, 'Upload text file :'
-    .input_box
-      = file_field :input, :upload
+.fieldset
+  .label
+    = label_tag :upload, "Upload text file :"
+  .input_box
+    = file_field :input, :upload

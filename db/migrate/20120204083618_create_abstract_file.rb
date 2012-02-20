@@ -2,10 +2,10 @@ class CreateAbstractFile < ActiveRecord::Migration
   def self.up
     create_table :abstract_files do |t|
       t.string :content
-      t.string :abstract_file_name
-      t.string :abstract_content_type
-      t.integer :abstract_file_size
-      t.date :abstract_updated_at
+      t.string :doc_file_name
+      t.string :doc_content_type
+      t.integer :doc_file_size
+      t.date :doc_updated_at
 
       t.timestamps
     end

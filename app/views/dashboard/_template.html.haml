@@ -19,13 +19,19 @@
 %script{:type => 'text/template', :id => 'upload_db_tmp'}
   = render :partial => 'upload_db_form'
 
-%script{:type => 'text/template', :id => 'upload_stopwords_tmp'}
-  = render :partial => 'upload_stopwords_form'
+%script{:type => 'text/template', :id => 'add_stopwords_tmp'}
+  = render :partial => 'add_stopwords'
 
 %script{:type => 'text/template', :id => 'upload_abstract_tmp'}
   = render :partial => 'upload_abstract_form'
 
 %script{:type => 'text/template', :id => 'enter_abstract_tmp'}
   = render :partial => 'enter_abstract_form'
+
+%script{:type => 'text/template', :id => 'upload_stopwords_tmp'}
+  = render :partial => 'upload_stopwords_form'
+
+%script{:type => 'text/template', :id => 'enter_stopwords_tmp'}
+  = render :partial => 'enter_stopwords_form'
 
 

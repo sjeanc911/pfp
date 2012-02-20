@@ -52,23 +52,23 @@ body {
             padding: 5px; }
           body #main #page #admin .upload_db_form .fieldset .submit_tag {
             align: center; }
-      body #main #page #admin .upload_stopwords_form {
+      body #main #page #admin .add_stopwords {
         display: block;
         padding: 5px;
         margin-left: 20px;
         width: 50%;
         background: #e6e6e6; }
-        body #main #page #admin .upload_stopwords_form .notice {
+        body #main #page #admin .add_stopwords .notice {
           padding: 5px; }
-        body #main #page #admin .upload_stopwords_form .fieldset {
+        body #main #page #admin .add_stopwords .fieldset {
           padding: 5px; }
-          body #main #page #admin .upload_stopwords_form .fieldset .label {
+          body #main #page #admin .add_stopwords .fieldset .label {
             float: left;
             width: 30%;
             padding: 5px; }
-          body #main #page #admin .upload_stopwords_form .fieldset .input_box {
+          body #main #page #admin .add_stopwords .fieldset .input_box {
             padding: 5px; }
-          body #main #page #admin .upload_stopwords_form .fieldset .submit_tag {
+          body #main #page #admin .add_stopwords .fieldset .submit_tag {
             align: center; }
       body #main #page #predict .tabs {
         display: block;

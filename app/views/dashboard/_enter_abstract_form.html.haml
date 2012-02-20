@@ -1,0 +1,10 @@
+.enter_abstract_form
+
+  = form_tag(abstract_files_path, {:multipart => true, :method => "post", :target => "temp_frame"}) do
+
+    = label_tag :abstract_label, "Abstract : "
+    = text_area_tag "abstract[content]"
+
+    = submit_tag "Predict >>"
+
+  %iframe{:id => "temp_frame", :name => "temp_frame", :style => "display: none;"}

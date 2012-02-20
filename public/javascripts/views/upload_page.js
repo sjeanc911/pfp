@@ -4,7 +4,7 @@ App.Views.UploadPageView = Backbone.View.extend({
     'showUploadPage'                        : 'showUploadPage',
     'click a#upload_abstract_file'         : 'uploadAbstractFile',
     'click a#enter_abstract_content'      : 'enterAbstractContent',
-    'uploadAbstractDone'                     : 'uploadDone'
+    'uploadAbstractDone'                    : 'uploadDone'
   },
 
   initialize: function(e) {
@@ -18,14 +18,12 @@ App.Views.UploadPageView = Backbone.View.extend({
   },
 
   uploadAbstractFile: function(e) {
-    console.log('insert uploading template');
     form = _.template($j("#upload_abstract_tmp").html(), {});
 
     $j("#form_container").html(form);
   },
 
   enterAbstractContent: function(e) {
-    console.log('insert textbox');
     form = _.template($j("#enter_abstract_tmp").html(), {});
 
     $j("#form_container").html(form);
