@@ -1,3 +1,5 @@
+#require Pfp::AbstractFiles
+
 class AbstractFilesController < ActionController::Base
 
 =begin
@@ -9,8 +11,6 @@ class AbstractFilesController < ActionController::Base
 =end
 
   def create
-    puts params.inspect
-
     Pfp::AbstractFiles.add_abstract(params[:abstract])
 
     responds_to_parent do

@@ -1,11 +1,12 @@
-module Pfp::AbstractFiles
+module Pfp
+  module AbstractFiles
 
-=begin
-  how to load this
-
-=end
-  def  self.add_abstract(abstract)
-    abstract = AbstractFile.create(abstract)
+    def  self.add_abstract(abstract)
+      puts "workflow"
+      puts abstract.inspect
+      abstract = AbstractFile.create(abstract)
+    end
   end
 
 end
+

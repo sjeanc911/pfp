@@ -1,3 +1,5 @@
+-# dashboard ==========================
+
 %script{:type => 'text/template', :id => 'banner_tmp'}
   = render :partial => 'banner'
 
@@ -7,31 +9,50 @@
 %script{:type => 'text/template', :id => 'home_page_tmp'}
   = render :partial => 'home_page'
 
+
+-# admin =============================
+
 %script{:type => 'text/template', :id => 'admin_page_tmp'}
-  = render :partial => 'admin_page'
-
-%script{:type => 'text/template', :id => 'upload_page_tmp'}
-  = render :partial => 'upload_page'
-
-%script{:type => 'text/template', :id => 'db_info_page_tmp'}
-  = render :partial => 'db_info_page'
+  = render :partial => '/admin/admin_page'
 
 %script{:type => 'text/template', :id => 'upload_db_tmp'}
-  = render :partial => 'upload_db_form'
+  = render :partial => '/admin/upload_db_form'
 
 %script{:type => 'text/template', :id => 'add_stopwords_tmp'}
-  = render :partial => 'add_stopwords'
-
-%script{:type => 'text/template', :id => 'upload_abstract_tmp'}
-  = render :partial => 'upload_abstract_form'
-
-%script{:type => 'text/template', :id => 'enter_abstract_tmp'}
-  = render :partial => 'enter_abstract_form'
+  = render :partial => '/admin/add_stopwords'
 
 %script{:type => 'text/template', :id => 'upload_stopwords_tmp'}
-  = render :partial => 'upload_stopwords_form'
+  = render :partial => '/admin/upload_stopwords_form'
 
 %script{:type => 'text/template', :id => 'enter_stopwords_tmp'}
-  = render :partial => 'enter_stopwords_form'
+  = render :partial => '/admin/enter_stopwords_form'
+
+-# predict  ============================
+
+%script{:type => 'text/template', :id => 'upload_page_tmp'}
+  = render :partial => '/predict/upload_page'
+
+%script{:type => 'text/template', :id => 'upload_abstract_tmp'}
+  = render :partial => '/predict/upload_abstract_form'
+
+%script{:type => 'text/template', :id => 'enter_abstract_tmp'}
+  = render :partial => '/predict/enter_abstract_form'
+
+-# db info  ============================
+
+%script{:type => 'text/template', :id => 'db_info_page_tmp'}
+  = render :partial => '/db_info/db_info_page'
+
+
+
+
+
+
+
+
+
+
+
+
 
 
