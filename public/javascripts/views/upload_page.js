@@ -1,10 +1,11 @@
 App.Views.UploadPageView = Backbone.View.extend({
 
   events : {
-    'showUploadPage'                        : 'showUploadPage',
-    'click a#upload_abstract_file'         : 'uploadAbstractFile',
-    'click a#enter_abstract_content'      : 'enterAbstractContent',
-    'uploadAbstractDone'                    : 'uploadDone'
+    'showUploadPage'                                      : 'showUploadPage',
+    'click a#show_upload_abstract_form'         : 'uploadAbstractFile',
+    'click a#show_enter_abstract_form'            : 'enterAbstractContent',
+    'click a#cancel_predict_abstract'                  : 'cancelUploadAbstract',
+    'uploadAbstractDone'                                  : 'uploadDone'
   },
 
   initialize: function(e) {
@@ -35,6 +36,10 @@ App.Views.UploadPageView = Backbone.View.extend({
 
   uploadDone: function(e) {
     console.log('upload abstract done');
+    this.hideUploadForm();
+  },
+
+  cancelUploadAbstract: function(e) {
     this.hideUploadForm();
   }
 

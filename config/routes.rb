@@ -58,7 +58,7 @@ PFP::Application.routes.draw do
     end
   end
 
-  resources :abstract_files  do
+  resources :abstracts  do
     member do
 
     end
