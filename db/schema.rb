@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(:version => 20120204083618) do
 
-  create_table "abstract_files", :force => true do |t|
+  create_table "abstracts", :force => true do |t|
     t.string   "content"
     t.string   "doc_file_name"
     t.string   "doc_content_type"
@@ -27,10 +27,8 @@ ActiveRecord::Schema.define(:version => 20120204083618) do
     t.datetime "updated_at"
   end
 
-  create_table "uni_prot_releases", :force => true do |t|
-    t.string   "db_file_name"
-    t.string   "db_content_type"
-    t.integer  "db_file_size"
+  create_table "uniprot_releases", :force => true do |t|
+    t.string   "file_name"
     t.string   "release_number"
     t.date     "release_date"
     t.string   "notes"
