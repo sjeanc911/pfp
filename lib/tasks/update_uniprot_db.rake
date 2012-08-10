@@ -13,7 +13,6 @@ how to use:
 rake update_uniprot_db release_number=2.21 release_date="06-05-2012" [file="doc/uniprot_db/db.csv"]
 =end
 
-
 desc "Update internal protein db with the latest Uniprot release."
 task :update_uniprot_db => :environment do
   release_number = ENV["release_number"]
@@ -27,4 +26,5 @@ task :update_uniprot_db => :environment do
     # see pfp/abstracts.rb re files
     Pfp::Uniprot.update_db(file)
   end
+
 end
