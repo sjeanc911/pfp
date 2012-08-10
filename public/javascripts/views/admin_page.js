@@ -1,13 +1,12 @@
 App.Views.AdminPageView = Backbone.View.extend({
 
   events : {
-    'showAdminPage'                           : 'showAdminPage',
-    'click a#upload_db_link'                    : 'showUploadDbForm',
+    'showAdminPage'                             : 'showAdminPage',
     'hideUploadForm'                             : 'hideUploadForm',
-    'click a#add_stopwords_link'        : 'addStopwords',
-    'change #add_stopwords_upload'   : 'uploadStopwords',
-    'change #add_stopwords_enter'      : 'enterStopwords',
-    'uploadDone'                                      : 'uploadDone'
+    'click a#add_stopwords_link'            : 'addStopwords',
+    'change #add_stopwords_upload'     : 'uploadStopwords',
+    'change #add_stopwords_enter'        : 'enterStopwords',
+    'uploadDone'                                    : 'uploadDone'
   },
 
   initialize: function(e) {
@@ -18,13 +17,6 @@ App.Views.AdminPageView = Backbone.View.extend({
     html = _.template($j('#admin_page_tmp').html(), {});
 
     $j(this.el).html(html);
-  },
-
-  showUploadDbForm: function(e) {
-    form = _.template($j('#upload_db_tmp').html(), {});
-    $j('#form_container').html(form);
-
-    $j("#uni_prot_release_release_date").datepicker();
   },
 
   hideUploadForm: function(e) {
@@ -47,7 +39,6 @@ App.Views.AdminPageView = Backbone.View.extend({
   },
 
   uploadDone: function(e) {
-    console.log('upload done');
     this.hideUploadForm();
   }
 
